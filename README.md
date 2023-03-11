@@ -22,9 +22,8 @@ FROM tiangolo/uvicorn-gunicorn-fastapi:python3.9-slim AS builder
 #set working directory in container
 WORKDIR /app
 
-#copy python libraries txt into images root
-
 COPY requirements.txt ./ 
+#copy python libraries txt into images root
 #to run the libraries install commands
 RUN --mount=type=cache,target=/root/.cache/pip \
     pip install -r requirements.txt 
