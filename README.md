@@ -23,8 +23,8 @@ FROM tiangolo/uvicorn-gunicorn-fastapi:python3.9-slim AS builder
 WORKDIR /app
 
 #copy python libraries txt into images root
-COPY requirements.txt ./ 
 
+COPY requirements.txt ./ 
 #to run the libraries install commands
 RUN --mount=type=cache,target=/root/.cache/pip \
     pip install -r requirements.txt 
