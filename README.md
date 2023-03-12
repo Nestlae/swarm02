@@ -119,7 +119,7 @@ networks:
 
 1. Open the cluster area to deploy the stack. https://portainer.ipv9.me/
 
-<div align="center"><img src="images/1.png" width="600px"></div>
+<div align="center"><img src="images/1.png" width="800px"></div>
 
 2. Click on "Images" on the left.
 - Find the images that you pushed in DockerHub (Number 1) by following the syntax down below.
@@ -128,11 +128,11 @@ networks:
 ```
 - Click "Pull the image" (Number 2) to pull the image into this cluster
 
-<div align="center"><img src="images/2.png" width="600px"></div>
+<div align="center"><img src="images/2.png" width="800px"></div>
 
 3. Click "Stacks" on the left and click "Add stack" on the right to create a new stack.
 
-<div align="center"><img src="images/3.png" width="600px"></div>
+<div align="center"><img src="images/3.png" width="800px"></div>
 
 4. After that, you need to pull the file named [docker-compose.yaml](https://github.com/Nestlae/swarm02/blob/master/docker-compose.yaml) from your repository (GitHub) to use that file to create a new stack in this cluster.<br>
 And fill the information by following instruction down below. **Then click "Deploy the stack"**
@@ -146,14 +146,14 @@ And fill the information by following instruction down below. **Then click "Depl
     - name : APPNAME (Number 7)
     - value : spcn26api (*optional*, Number 8)
 
-<div align="center"><img src="images/4.png" width="600px"></div>
+<div align="center"><img src="images/4.png" width="800px"></div>
 
-<div align="center"><img src="images/5.png" width="600px"></div>
+<div align="center"><img src="images/5.png" width="800px"></div>
 
 5. After the stack is deployed. Wait for status to be "running".
 
-<div align="center"><img src="images/6.png" width="600px"></div>
+<div align="center"><img src="images/6.png" width="800px"></div>
 
 6. After the status says "running", try to go to the website https://spcn26api.xops.ipv9.xyz/.<br> If [docker-compose.yaml](https://github.com/Nestlae/swarm02/blob/master/docker-compose.yaml) is done correctly, it will display something like this.
 
-<div align="center"><img src="images/7.png" width="400px"></div>
+<div align="center"><img src="images/7.png" width="600px"></div>
