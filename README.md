@@ -1,15 +1,15 @@
-# SWARM02 / FastAPI - Swarm Deployment
+# **SWARM02 / FastAPI - Swarm Deployment**
 
-## Reference
+**Reference**
 - [https://github.com/docker/awesome-compose/tree/master/fastapi](https://github.com/docker/awesome-compose/tree/master/fastapi)
 
-## WakaTime - swarm02
+**WakaTime - swarm02**
 - [https://wakatime.com/@spcn26/projects/mvwnromvqg](https://wakatime.com/@spcn26/projects/mvwnromvqg)
 
-## URL for FastAPI
+**URL for FastAPI**
 - [https://spcn26api.xops.ipv9.xyz/](https://spcn26api.xops.ipv9.xyz/)
 
-# Steps for preparing deployment
+## **Steps for preparing deployment**
 
 1. Create [main.py](https://github.com/Nestlae/swarm02/blob/master/app/main.py) for simulating this API.
 
@@ -72,7 +72,7 @@ docker push <imageID> <usernameDockerHub>/<repository>:<tag>
 ```
 
 
-7. Create [docker-compose.yaml](https://github.com/Nestlae/swarm02/blob/master/docker-compose.yaml) for preparing stack deployment.
+7. Create [docker-compose.yaml](https://github.com/Nestlae/swarm02/blob/master/docker-compose.yaml) for preparing stack deployment in the root directory.
 ```ruby
 version: '3.3' #version of compose file
 services: #create a service
@@ -113,3 +113,4 @@ networks:
   webproxy: #request to connect to a reverse proxy network that named "webproxy" in this cluster
     external: true #request to connent to an existing service
 ```
+8. Push [docker-compose.yaml](https://github.com/Nestlae/swarm02/blob/master/docker-compose.yaml) and [app](https://github.com/Nestlae/swarm02/tree/master/app) directory to GitHub ([swarm02](https://github.com/Nestlae/swarm02))
